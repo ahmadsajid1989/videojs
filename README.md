@@ -1,2 +1,2 @@
 # videojs
-A customized version of vieo js player
+A customized version of video - js player
