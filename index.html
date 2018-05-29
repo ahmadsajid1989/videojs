@@ -11,8 +11,7 @@
 
 <body>
     <div>
-        <video id="content_video" class="video-js vjs-default-skin" poster="../posters/bbb_poster.jpg" controls preload="auto" width="640" height="360">
-            <source src="//commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4"></source>
+        <video id="content_video" class="video-js vjs-default-skin" poster="../posters/bbb_poster.jpg" controls preload="auto" width="640" height="360">           
         </video>
     </div>
     <script type="text/javascript" src="https://vjs.zencdn.net/7.0.3/video.js"></script>
@@ -42,6 +41,12 @@
     };
 
     player = videojs('content_video', options);
+
+    player.src({
+        src: '//commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4',
+        type: 'video/mp4'
+
+    });
 
     /*
      initializing the available quality selectors
